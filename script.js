@@ -27,3 +27,23 @@ function calculateResult() {
     return display.value;
 }
 
+
+let bracketToggle = true;
+
+function togglebracket() {
+  if (display.value === "0") {
+    display.value = "";
+  }
+
+  if (bracketToggle) {
+    display.value += "(";
+  } else {
+    display.value += ")";
+  }
+
+  bracketToggle = !bracketToggle; // flip the state
+}
+   
+
+
+
